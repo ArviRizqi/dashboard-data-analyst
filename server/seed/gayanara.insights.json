@@ -1,0 +1,142 @@
+{
+  "pages": {
+    "ringkasan": {
+      "title": "Ringkasan",
+      "question": "Seberapa sehat bisnis Gayanara, dan apakah pertumbuhannya berlanjut?",
+      "answer": "Revenue terealisasi Rp 877,8 jt dari 1.776 pesanan terkirim. Revenue naik 115,7% pada 2023 dan 18,1% pada 2024. Pada Jan–Feb 2025 revenue naik 63,9% dibanding Jan–Feb 2024 (Rp 92,1 jt vs Rp 56,2 jt). Pertumbuhan datang dari jumlah pesanan, karena nilai pesanan rata-rata tetap di sekitar Rp 490 rb. Satu risiko besar: 656 pesanan berstatus dikirim atau diproses sudah lebih dari 90 hari (Rp 340,3 jt) dan kemungkinan statusnya tidak diperbarui."
+    },
+    "produk": {
+      "title": "Produk",
+      "question": "Kategori, brand, dan produk mana yang paling menggerakkan penjualan?",
+      "answer": "Penjualan merata di enam kategori (15,6%–17,4% revenue; Jaket terbesar). Revenue terkonsentrasi di level produk: 72 dari 300 produk (24%) menghasilkan separuh revenue, dan produk berharga Rp 400–600 rb (16% katalog) menyumbang 32,5%. Riang Apparel brand teratas (13,2%), NusaBrand punya harga jual rata-rata tertinggi. Stok 40.182 unit setara 6,2 kali seluruh unit terjual dalam 38 bulan, sementara 11 produk (termasuk yang laris) stoknya 0."
+    },
+    "pelanggan": {
+      "title": "Pelanggan",
+      "question": "Siapa pelanggan Gayanara, dan seberapa loyal mereka?",
+      "answer": "Dari 800 pelanggan terdaftar, 717 pernah menerima pesanan dan 71% di antaranya membeli lebih dari sekali. Segmen Juara (193 pelanggan, 3+ pesanan, aktif) menghasilkan 43% revenue. Ada 231 pelanggan repeat yang berhenti membeli lebih dari 180 hari dengan nilai historis Rp 317 jt (36% revenue), peluang win-back terbesar. Perempuan menyumbang 57,7% revenue dan usia 25–34 tahun 42,5%."
+    },
+    "wilayah": {
+      "title": "Wilayah",
+      "question": "Dari mana pesanan datang, dan di kota mana pemenuhan pesanan paling bermasalah?",
+      "answer": "Jawa Barat memimpin dengan 19,3% revenue (Bekasi, Depok, Bandung, Bogor), disusul Jawa Timur 10,1%. Revenue di 16 provinsi relatif tersebar. Tingkat pembatalan berbeda nyata antar kota (uji chi-square p = 0,008): Banjarmasin 18,2%, Manado 15,6%, Bogor 15,0%, dan Yogyakarta 14,9%, dibanding rata-rata nasional 10,9% dan Padang 6,0%."
+    },
+    "operasional": {
+      "title": "Operasional",
+      "question": "Seberapa andal kurir dan metode pembayaran kita?",
+      "answer": "Tarif ongkir rata-rata nyaris sama di semua kurir (Rp 22,6–24,2 rb), jadi ongkir tidak menjadi alasan memilih satu kurir. Yang berbeda adalah hasilnya: J&T (30% pesanan) hanya 54,1% terkirim dan 17,4% masih berstatus dikirim, sedangkan SiCepat 62,8% dan Pos Indonesia 64,0% terkirim. Anteraja punya pembatalan tertinggi (14,3%). Perbedaan pembatalan antar kurir signifikan tipis (p = 0,047), retur tidak (p = 0,12). Metode pembayaran tidak berpengaruh pada pembatalan (p = 0,30)."
+    },
+    "promo": {
+      "title": "Promo & ulasan",
+      "question": "Apakah promo menaikkan penjualan, dan apakah pelanggan puas?",
+      "answer": "Promo dipakai di 40% pesanan dengan total diskon Rp 37,3 jt, tetapi tidak membuat keranjang lebih besar: pada pesanan terkirim, nilai sebelum diskon Rp 501,7 rb (promo) vs Rp 510,1 rb (tanpa promo). Pembatalan juga sama (10,5% vs 11,2%). Kode musiman dipakai di luar tahunnya, mis. HARBOLNAS22 87% di luar 2022, dan 38 pesanan mendapat diskon di atas 50%. Rating ulasan rata-rata 4,02 dari 5; 11,3% ulasan 1–2 bintang. Riang Apparel, brand terlaris, berating terendah (3,85)."
+    },
+    "tindakan": {
+      "title": "Rekomendasi & data",
+      "question": "Apa yang harus dilakukan berikutnya, dan seberapa bisa data ini dipercaya?",
+      "answer": "Enam tindakan di bawah diurutkan berdasarkan nilai rupiah dan kemudahan. Beberapa temuan data (status pesanan yang macet, AOV di sheet KPI, tanggal pesanan sebelum registrasi) perlu dibereskan sebelum angka dipakai untuk target."
+    }
+  },
+  "recommendations": [
+    {
+      "level": "hi",
+      "levelLabel": "Tinggi",
+      "title": "Bereskan pesanan yang macet",
+      "evidence": "656 pesanan berstatus dikirim/diproses sudah lebih dari 90 hari (Rp 340,3 jt); 445 di antaranya lebih dari satu tahun.",
+      "action": "Audit per kurir, perbarui status ke terkirim, batal, atau retur, dan pasang aturan otomatis: status tidak berubah dalam 14 hari memicu pengecekan.",
+      "metric": "Targetkan pesanan \"dikirim\" lebih dari 14 hari menjadi 0; revenue terealisasi akan naik sampai Rp 340 jt bila sebagian terkirim."
+    },
+    {
+      "level": "hi",
+      "levelLabel": "Tinggi",
+      "title": "Win-back pelanggan repeat yang diam",
+      "evidence": "231 pelanggan dengan 2+ pesanan tidak membeli lagi lebih dari 180 hari; nilai historisnya Rp 317 jt (36% revenue).",
+      "action": "Kampanye personal lewat kategori yang pernah dibeli, kode sekali pakai bernilai tetap kecil, dan uji dengan kelompok pembanding.",
+      "metric": "Ukur reaktivasi 90 hari; titik awal 0%."
+    },
+    {
+      "level": "hi",
+      "levelLabel": "Tinggi",
+      "title": "Rapikan kebijakan promo",
+      "evidence": "Promo tidak menaikkan keranjang (Rp 501,7 rb vs Rp 510,1 rb sebelum diskon). 38 pesanan diskon di atas 50%, 2 pesanan hanya Rp 1.000. Kode musiman berjalan sepanjang tahun.",
+      "action": "Diskon persentase dengan batas atas, minimum belanja, masa berlaku kode, dan uji A/B sebelum kampanye besar.",
+      "metric": "Diskon Rp 37,3 jt (6% nilai kotor pesanan berpromo) bisa dialihkan ke segmen win-back."
+    },
+    {
+      "level": "mid",
+      "levelLabel": "Sedang",
+      "title": "Evaluasi J&T dan Anteraja",
+      "evidence": "J&T mengirim 30% pesanan tetapi hanya 54,1% terkirim; Anteraja membatalkan 14,3%. Ongkir hampir sama antar kurir.",
+      "action": "Pindahkan sebagian volume ke SiCepat atau JNE di kota bermasalah, dan minta SLA tertulis dari J&T.",
+      "metric": "Cek ulang setelah 2 bulan; perbedaan pembatalan baru signifikan tipis (p = 0,047)."
+    },
+    {
+      "level": "mid",
+      "levelLabel": "Sedang",
+      "title": "Selaraskan stok dengan penjualan",
+      "evidence": "Stok 40.182 unit (Rp 9,03 M pada harga jual) vs 6.440 unit terjual dalam 38 bulan. 11 produk stok 0, termasuk PRD001 (rating 5,0, 26 terjual).",
+      "action": "Isi ulang produk laris yang kosong dulu, hentikan pembelian kategori Jaket (stok 8,3 kali penjualan), dan jadwalkan cuci gudang untuk produk berstok tebal.",
+      "metric": "Perlu data biaya dan tanggal masuk stok untuk keputusan akhir."
+    },
+    {
+      "level": "mid",
+      "levelLabel": "Sedang",
+      "title": "Perbaiki kualitas brand dan kategori berating rendah",
+      "evidence": "Riang Apparel berating 3,85 padahal brand terlaris; Kaos 3,92 dan Kemeja 3,94.",
+      "action": "Baca ulasan 1–2 bintang per produk, hubungi pemasok, dan tampilkan size chart yang lebih jelas.",
+      "metric": "Target rating brand di atas 4,0."
+    }
+  ],
+  "dataQuality": [
+    {
+      "finding": "AOV sheet KPI cards Rp 292.584 keliru",
+      "detail": "Revenue hanya dari pesanan terkirim (1.776) tetapi dibagi 3.000 semua pesanan. AOV yang benar Rp 494.230, sama dengan Sheet18.",
+      "handling": "Pakai Rp 494.230."
+    },
+    {
+      "finding": "Pesanan sebelum tanggal registrasi",
+      "detail": "795 pesanan (26,5%) bertanggal sebelum pelanggan terdaftar.",
+      "handling": "Analisis akuisisi dan kohort tidak dilakukan; periksa sumber tanggal registrasi."
+    },
+    {
+      "finding": "Status pesanan tidak diperbarui",
+      "detail": "656 pesanan dikirim/diproses lebih dari 90 hari.",
+      "handling": "Dilaporkan sebagai risiko; tidak diubah."
+    },
+    {
+      "finding": "Kategori tidak konsisten",
+      "detail": "\"kaos\" (12) dan \"kemeja\" (15) ditulis huruf kecil.",
+      "handling": "Distandarkan menjadi Kaos dan Kemeja."
+    },
+    {
+      "finding": "Definisi revenue",
+      "detail": "total_amount_idr = nilai item dikurangi diskon (cocok 3.000 dari 3.000 pesanan), tanpa ongkir.",
+      "handling": "Revenue di luar ongkir."
+    },
+    {
+      "finding": "Rating produk tidak cocok ulasan",
+      "detail": "avg_rating di tabel produk (rata-rata 4,26) tidak berkorelasi dengan rata-rata ulasan (r = −0,05; rata-rata 4,02).",
+      "handling": "Dashboard memakai rating dari tabel ulasan."
+    },
+    {
+      "finding": "Teks ulasan tidak konsisten dengan bintang",
+      "detail": "Contoh: \"Tidak sesuai ekspektasi, kurang puas.\" diberi 5 bintang oleh 21 dari 46 ulasan.",
+      "handling": "Analisis sentimen teks tidak dilakukan."
+    },
+    {
+      "finding": "Ongkir tidak mencerminkan jarak atau nilai",
+      "detail": "Tarif tersebar 8–45 rb, tidak berkorelasi dengan nilai pesanan (r = −0,01) dan seragam antar kurir.",
+      "handling": "Jangan menarik kesimpulan biaya per kurir."
+    },
+    {
+      "finding": "Data kosong dan duplikat",
+      "detail": "40 telepon, 9 material, 120 teks ulasan kosong; 3 email ganda.",
+      "handling": "Dibiarkan; tidak memengaruhi metrik utama."
+    },
+    {
+      "finding": "Tidak ada biaya produk",
+      "detail": "Tidak ada HPP atau biaya pemasaran.",
+      "handling": "Margin dan ROI promo tidak dapat dihitung."
+    }
+  ],
+  "footer": "Revenue = total_amount_idr (nilai item dikurangi diskon, di luar ongkir). Basis \"Terkirim\" hanya menghitung pesanan berstatus delivered dan sama dengan revenue Rp 877.752.049 di sheet KPI. \"Aktif\" menambah shipped dan processing. \"Semua\" memasukkan pesanan batal dan retur. Tingkat batal dan retur selalu dihitung dari semua pesanan dalam filter. Tidak ada data biaya, jadi margin tidak dapat dihitung."
+}

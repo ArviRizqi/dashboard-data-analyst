@@ -1,0 +1,12 @@
+# Blueprint Render: "New > Blueprint" lalu pilih repo ini.
+services:
+  - type: web
+    name: dashboard-perusahaan
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGODB_URI
+        sync: false        # isi manual di dashboard Render (connection string Atlas)
+      - key: READ_ONLY
+        value: "true"      # pengunjung hanya bisa melihat, tidak bisa mengubah data
